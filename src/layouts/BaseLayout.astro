@@ -1,22 +1,26 @@
 ---
 import { getSiteData } from '../lib/directus';
+import Header from '../components/Header.astro';
+import '../assets/main.css';
 
 const [siteInfo] = await Promise.all([
   getSiteData(),
 ]);
+
+
+
+
 ---
 
-
-
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{siteInfo?.title}</title>
 </head>
 <body>
-    
+    <Header />
     <slot />
 </body>
 </html>

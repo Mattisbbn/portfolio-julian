@@ -1,0 +1,18 @@
+---
+import { getSiteData, getProjects } from '../lib/directus';
+
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+const [siteInfo, projects] = await Promise.all([
+  getSiteData(),
+  getProjects()
+]);
+
+
+---
+
+
+<BaseLayout>
+  
+</BaseLayout>
+

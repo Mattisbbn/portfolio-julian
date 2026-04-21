@@ -5,6 +5,14 @@ import headerImage from "../images/header-icon.png";
 ---
 
 
-<header class="bg-black">
-    <Image src={headerImage} alt="Logo"  height={50} />
+<header class="bg-black h-[44px] flex items-center gap-2 px-4 justify-between">
+    <div class="my-auto mx-6 ">
+        <Image class='' src={headerImage} alt="Logo"  height={36} />
+    </div>
+    <ul class="flex gap-12  text-cream font-semibold ">
+        <li><a href="#">Projects</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div></div>
 </header>

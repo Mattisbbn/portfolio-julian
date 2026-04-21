@@ -1,7 +1,11 @@
 ---
 import { getSiteData, getProjects } from '../lib/directus';
 
+import { Image } from "astro:assets";
+
 import BaseLayout from '../layouts/BaseLayout.astro';
+
+import bigLogo from '../images/big-logo.png';
 
 const [siteInfo, projects] = await Promise.all([
   getSiteData(),
@@ -13,6 +17,7 @@ const [siteInfo, projects] = await Promise.all([
 
 
 <BaseLayout>
-  
+
+  <Image class='mx-auto mt-12' src={bigLogo} alt="Big Logo"  height={200} />
 </BaseLayout>
 
